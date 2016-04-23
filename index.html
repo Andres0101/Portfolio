@@ -12,7 +12,85 @@
 
 <template is="dom-bind" id="app">
 
-  Hello World!
+  <paper-drawer-panel force-narrow right-drawer disable-swipe>
+  	<paper-header-panel drawer>
+  		<paper-toolbar>
+  			<div>Menu</div>
+  		</paper-toolbar>
+
+  		<paper-menu>
+  			<paper-item><a href="#aboutMe">About me</a></paper-item>
+  			<paper-item><a href="#">Skills</a></paper-item>
+  			<paper-item><a href="#"></a>Projects</a></paper-item>
+  			<paper-item><a href="#"></a>Contact me</a></paper-item>
+  		</paper-menu>
+
+  	</paper-header-panel>
+
+  	<paper-header-panel main mode="waterfall">
+  		<paper-toolbar>
+  			<paper-icon-button icon="my-icons:logo" id="logo"></paper-icon-button>
+  			<div class="flex"></div>
+		    <paper-icon-button  id="iconoMenuNavegar" icon="menu" paper-drawer-toggle></paper-icon-button>
+		    <!--<paper-icon-button icon="my-icons:fb"></paper-icon-button>-->
+
+
+		    <paper-tabs id="menuNavegar">
+		    	<paper-tab><a href="#aboutMe">About me</a></paper-tab>
+		    	<paper-tab><a href="#">Skills</a></paper-tab>
+		    	<paper-tab><a href="#"></a>Projects</a></paper-tab>
+		    	<paper-tab><a href="#"></a>Contact me</a></paper-tab>
+		    </paper-tabs>
+
+		 </paper-toolbar>
+
+
+	  		<section>
+	  			<!-- Home -->
+	  			<div id="home" class="layout horizontal center-center">
+	  				<iron-image class="image_full" sizing="contain" preload fade src="imagen.jpg"></iron-image>
+	  				<!--<iron-image class="image_full" sizing="cover" preload fade src="http://lorempixel.com/1920/1080"></iron-image>-->
+	  			</div>
+
+	  			<!-- About me -->
+	  			<div id="aboutMe" class="layout vertical center-center">
+					<div class="layout horizontal image_full">
+		  				<div class="color layout vertical center-center flex">1</div>
+		  				<div class="color layout vertical center-center flex">2</div>
+		  				<div class="color layout vertical center-center flex">3</div>
+	  				</div>
+
+	  				<div class="layout horizontal image_full">
+		  				<div class="color layout vertical center-center flex">4</div>
+		  				<div class="color layout vertical center-center flex">5</div>
+		  				<div class="color layout vertical center-center flex">6</div>
+	  				</div>
+
+	  				<paper-card heading="Card Title">
+						<div class="card-content">Some content</div>
+						<div class="card-actions">
+						<paper-button>Some action</paper-button>
+						</div>
+					</paper-card>
+	  			</div>
+	  			<!--<div class="layout vertical center-center image_full">
+
+	  				<div class="layout horizontal test">
+		  				<div class="color layout vertical center-center flex">1</div>
+		  				<div class="color layout vertical center-center flex">2</div>
+		  				<div class="color layout vertical center-center flex">3</div>
+	  				</div>
+
+	  				<div class="layout horizontal test">
+		  				<div class="color layout vertical center-center flex">4</div>
+		  				<div class="color layout vertical center-center flex">5</div>
+		  				<div class="color layout vertical center-center flex">6</div>
+	  				</div>
+	  			</div>-->
+	  		</section>
+
+  	</paper-header-panel>
+  </paper-drawer-panel>
 
 </template>
 
